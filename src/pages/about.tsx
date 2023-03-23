@@ -57,8 +57,8 @@ export const Head: HeadFC = () => {
 
   return (
     <SEO
-      title="Bio"
-      description="Hi, I'm Stephen. Software engineer, tinkerer, and occasional photographer."
+      title="About"
+      description="Hi, I'm a Gatsby starter. I can help you set up a personal website with a blog, project showcase, and bio in minutes."
       imgType="profile"
       imgTitle={author.title}
       imgSubtitle={author.subtitle}

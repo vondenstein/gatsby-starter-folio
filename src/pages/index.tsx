@@ -73,7 +73,7 @@ const IndexPage: React.FC<PageProps> = () => {
           I can help you showcase your projects that you'd like to share. Take a
           look at the projects page!
         </p>
-        <Button to="/code" title="Link to Projects Page">
+        <Button to="/projects" title="Link to Projects Page">
           View projects
         </Button>
       </Block>

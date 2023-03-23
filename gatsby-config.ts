@@ -4,7 +4,7 @@ const config: GatsbyConfig = {
   siteMetadata: {
     title: `Folio`,
     description: `A Gatsby starter for a beautiful, performant personal portfolio.`,
-    siteUrl: `https://folio.gatsbyjs.io`,
+    siteUrl: `https://starterfolio.gatsbyjs.io`,
     ogImageUrl: ``,
     author: {
       name: `Starter Folio`,
@@ -34,7 +34,7 @@ const config: GatsbyConfig = {
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
-        siteUrl: `https://folio.gatsbyjs.io`,
+        siteUrl: `https://starterfolio.gatsbyjs.io`,
         stripQueryString: true,
       },
     },

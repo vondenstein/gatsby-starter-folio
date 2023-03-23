@@ -35,8 +35,7 @@ export default CodePage
 
 export const Head: HeadFC = () => (
   <SEO
-    title="Software Projects"
-    description="A collection of software projects Stephen has worked on ~ for fun or to learn ~
-that he wanted to share."
+    title="Projects"
+    description="A collection of projects that I have worked on that I wanted to share."
   />
 )
