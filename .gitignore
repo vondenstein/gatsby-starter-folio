@@ -1,0 +1,10 @@
+node_modules/
+.cache/
+public
+src/gatsby-types.d.ts
+
+# dotenv environment variable files
+.env*
+
+# Mac files
+.DS_Store
