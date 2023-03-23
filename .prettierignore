@@ -1,0 +1,17 @@
+# node
+package-lock.json
+node_modules/**
+
+# cache-dirs
+.cache
+
+# built sites
+public
+*.min.js
+
+# ignore built packages
+packages/**/*.js
+!packages/*/src/**/*.js
+
+# coverage
+coverage
