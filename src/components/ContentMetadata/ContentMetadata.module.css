@@ -1,0 +1,26 @@
+.text {
+  margin-bottom: 0;
+}
+
+.darkText {
+  margin-bottom: 0;
+  font-weight: 600;
+  opacity: 0.5;
+}
+
+.link {
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s cubic-bezier(0.3, 0.46, 0.45, 0.9);
+}
+
+.link:hover {
+  color: #111111;
+  opacity: 1;
+}
+
+@media (max-width: 520px) {
+  .darkText {
+    opacity: 0.55;
+  }
+}

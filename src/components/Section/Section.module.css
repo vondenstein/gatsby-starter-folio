@@ -1,0 +1,21 @@
+.heading {
+  margin-bottom: 1.5rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .content {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .content {
+    gap: 1.5rem;
+  }
+}

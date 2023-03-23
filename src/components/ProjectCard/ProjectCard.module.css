@@ -1,0 +1,165 @@
+.card {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  /* box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.28); */
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.left {
+  position: relative;
+  z-index: 1;
+  max-width: 17.5rem;
+  margin: 3.3rem 0 3.3rem 3.5rem;
+  flex-shrink: 0;
+}
+
+.right {
+  margin-right: 0rem;
+}
+
+.image {
+  height: 386px;
+}
+
+.img {
+  object-position: 0 0;
+}
+
+.heading {
+  height: 25px;
+  margin-bottom: 1.2rem;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.icon {
+  height: 25px;
+  width: 25px;
+  margin-right: 12px;
+  margin-bottom: -4px;
+}
+
+.description {
+  height: 5.2rem;
+  font-size: 18px;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.hr {
+  width: 7rem;
+  height: 1px;
+  border: none;
+  margin-bottom: 1.5rem;
+}
+
+.link {
+  position: relative;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.link:not(:last-child) {
+  margin-right: 1.4rem;
+}
+
+.linkIcon {
+  height: 16px;
+  width: 16px;
+  margin-right: 12px;
+  margin-bottom: -2px;
+}
+
+.mobileLink {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .left {
+    max-width: 15rem;
+    margin: 2.3rem 1rem 2.3rem 2.8rem;
+  }
+
+  .description {
+    height: 6.5rem;
+    -webkit-line-clamp: 5;
+    margin-bottom: 1rem;
+  }
+
+  .hr {
+    margin-bottom: 1rem;
+  }
+
+  .image {
+    height: 308px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img {
+    object-fit: contain !important;
+    object-position: 50% 50%;
+  }
+
+  .description,
+  .hr,
+  .links {
+    display: none;
+  }
+
+  .mobileLink {
+    display: block;
+    border-top: 1px solid rgba(11, 11, 11, 0.2);
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    background-color: rgba(11, 11, 11, 0.15);
+    margin-top: 1.5rem;
+  }
+
+  .left {
+    margin: 1.7rem 0 0;
+    max-width: fit-content;
+  }
+}
+
+@media (max-width: 520px) {
+  .image {
+    height: calc(calc(100vw - 4rem) / calc(1024 / 800));
+  }
+
+  .left {
+    margin: 1.2rem 0 0;
+  }
+
+  .heading {
+    margin-bottom: 0.3rem;
+  }
+
+  .mobileLink {
+    margin-top: 0.3rem;
+  }
+}

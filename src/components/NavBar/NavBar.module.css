@@ -1,0 +1,80 @@
+.container {
+  padding-top: 2.2rem;
+  max-width: 1200px;
+  box-sizing: content-box;
+  position: relative;
+  margin: 0 auto;
+  height: 54px;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+.right {
+  margin-bottom: 9px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.links {
+  display: flex;
+}
+
+.links :not(:last-child) {
+  margin-right: 2.85rem;
+}
+
+.logoLink {
+  display: inline-block;
+  transition: opacity 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.logoLink:hover {
+  opacity: 0.6;
+}
+
+.logo {
+  height: 24px;
+  width: 24px;
+  margin: 0;
+}
+
+@media (max-width: 1280px) {
+  .container {
+    margin: 0 2rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  .links :not(:last-child) {
+    margin-right: 1.9rem;
+  }
+}
+
+@media (max-width: 848px) {
+  .container {
+    margin: 0 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .links {
+    display: none;
+  }
+
+  .menuButton {
+    display: block;
+  }
+}
+
+@media (max-width: 520px) {
+  .container {
+    margin: 0 1rem;
+  }
+}

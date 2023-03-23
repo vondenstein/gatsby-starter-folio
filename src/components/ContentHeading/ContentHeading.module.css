@@ -1,0 +1,27 @@
+.heading {
+  width: 32rem;
+  margin: 0 auto;
+}
+
+.title {
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 1024px) {
+  .heading,
+  .content {
+    width: 24rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .heading {
+    max-width: 480px;
+  }
+}
+
+@media (max-width: 520px) {
+  .heading {
+    width: auto;
+  }
+}

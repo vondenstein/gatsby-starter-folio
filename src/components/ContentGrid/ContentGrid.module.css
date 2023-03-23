@@ -1,0 +1,17 @@
+.contentGrid {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .contentGrid {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 520px) {
+  .contentGrid {
+    gap: 1.5rem;
+  }
+}

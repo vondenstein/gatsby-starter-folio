@@ -1,0 +1,128 @@
+.container {
+  max-width: 1200px;
+  box-sizing: content-box;
+  position: relative;
+  margin: 0 auto;
+  height: 100%;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding: 10rem 0 4rem;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.right {
+  margin-bottom: 9px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.logoLink {
+  opacity: 0.3;
+  display: inline-block;
+  transition: opacity 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.logoLink:hover {
+  opacity: 1;
+}
+
+.logo {
+  height: 24px;
+  width: 24px;
+  margin: 0;
+}
+
+.right :first-child {
+  display: none;
+}
+
+.right :not(:last-child) {
+  margin-right: 2.85rem;
+}
+
+.copyright {
+  font-family: "SF Pro Display", "-apple-system", "BlinkMacSystemFont",
+    "San Francisco", "Helvetica Neue", "Helvetica", "Ubuntu", "Roboto", "Noto",
+    "Segoe UI", "Arial", sans-serif;
+}
+
+.copyright {
+  opacity: 0.3;
+  font-size: 0.75rem;
+  margin-left: 50px;
+}
+
+@media (max-width: 1280px) {
+  .container {
+    margin: 0 2rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  .right :not(:last-child) {
+    margin-right: 1.9rem;
+  }
+}
+
+@media (max-width: 848px) {
+  .container {
+    margin: 0 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .logoLink {
+    display: none;
+  }
+
+  .right :first-child {
+    display: block;
+  }
+
+  .right {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 1.75rem;
+  }
+
+  .container {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    margin: 5rem 2rem 0;
+    padding: 5rem 0 5rem;
+    border-top: 1px solid #1b1b1b;
+  }
+
+  .right > a {
+    margin: 1rem 0 !important;
+  }
+
+  .left {
+    text-align: center;
+  }
+
+  .copyright {
+    margin: 0;
+  }
+}
+
+@media (max-width: 520px) {
+  .container {
+    margin: 2rem 1rem 0;
+    padding: 4rem 0 4rem;
+  }
+}
