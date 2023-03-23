@@ -1,7 +1,9 @@
+# Node files
 node_modules/
 .cache/
 public
 src/gatsby-types.d.ts
+package-lock.json
 
 # dotenv environment variable files
 .env*
